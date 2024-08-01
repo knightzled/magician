@@ -1,0 +1,55 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ 
+ 
+local MainWindow = Rayfield:CreateWindow({
+    Name = "Kill Yourself :3",
+    LoadingTitle = "Loading...",
+    LoadingSubtitle = "By Damon",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "From Damon"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "https://discord.gg/eTNcf8v2", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "From Damon :3",
+       Subtitle = "Key System",
+       Note = "Type Your IRL NAME WITH FULL CAPS 'MARK NIEL'",
+       FileName = "Damon",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "MARK NIEL"
+    }
+ })
+
+ Rayfield:Notify({
+    Title = "Kill Yourself",
+    Content = "Follow D4m0nOfficialll On Tiktok ;3 ",
+    Duration = 4,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+       Ignore = {
+          Name = "Okay!",
+          Callback = function()
+          print("The user tapped Okay!")
+       end
+    },
+ },
+ })
+ 
+ 
+ local MainTab = MainWindow:CreateTab("Main", 4483362458) -- Title, Image
+
+ local Label = MainTab:CreateLabel("For Yor :3 MARK NIEL")
+
+ local Button = MainTab:CreateButton({
+    Name = "Press This Then Type in roblox ingame /Console",
+    Callback = function()
+        print('I need you to kill yourself ez ez ez ez ez dog shit')
+    end,
+ })
